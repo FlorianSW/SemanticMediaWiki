@@ -4,6 +4,7 @@ namespace SMW\DataValues\ValueParsers;
 
 use SMW\ControlledVocabularyImportContentFetcher;
 use SMW\MediaWiki\MediaWikiNsContentReader;
+use SMW\DataValues\MonolingualTextValue;
 
 /**
  * @license GNU GPL v2+
@@ -51,6 +52,15 @@ class ValueParserFactory {
 		);
 
 		return new ImportValueParser( $controlledVocabularyImportContentFetcher );
+	}
+
+	/**
+	 * @since 2.4
+	 *
+	 * @return MonolingualTextValueParser
+	 */
+	public function newMonolingualTextValueParser() {
+		return new MonolingualTextValueParser();
 	}
 
 }

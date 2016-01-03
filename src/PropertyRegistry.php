@@ -324,6 +324,8 @@ class PropertyRegistry {
 			'_ASKDU' => array( '_num', true, true ), // "has query duration"
 			'_MEDIA' => array( '_txt', true, false ), // "has media type"
 			'_MIME'  => array( '_txt', true, false ), // "has mime type"
+			'_LCODE' => array( '_txt', true, true ), // "Language code"
+			'_LTEXT' => array( '_txt', true, false ), // "Language dependent text"
 		);
 
 		foreach ( $this->datatypeLabels as $id => $label ) {

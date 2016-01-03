@@ -41,7 +41,8 @@ class SMWLanguageZh_tw extends SMWLanguage {
 		'_anu' => '注釋URI型', // name of the annotation URI type (OWL annotation property)
 		'_tel' => '電話號碼型',  // name of the telephone (URI) type
 		'_rec' => '記錄型', // name of record type
-		'_qty' => '數量型' // name of the number type with units of measurement
+		'_qty' => '數量型', // name of the number type with units of measurement
+		'_mlt_rec' => 'Monolingual text',
 	);
 
 	protected $m_DatatypeAliases = array(
@@ -82,7 +83,9 @@ class SMWLanguageZh_tw extends SMWLanguage {
 		'_MEDIA'=> '媒體類型', // Media type
 		'_MIME' => 'MIME類型', // MIME type
 		'_ERRC' => 'Has processing error',
-		'_ERRT' => 'Has processing error text'
+		'_ERRT' => 'Has processing error text',
+		'_LCODE' => 'Language code',
+		'_LTEXT' => 'Language dependent text',
 	);
 
 	protected $m_SpecialPropertyAliases = array(

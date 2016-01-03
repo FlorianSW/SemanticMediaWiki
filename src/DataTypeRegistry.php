@@ -393,6 +393,7 @@ class DataTypeRegistry {
 			'_dat'  => 'SMWTimeValue', // Time type
 			'_boo'  => 'SMWBoolValue', // Boolean type
 			'_rec'  => 'SMWRecordValue', // Value list type (replacing former nary properties)
+			'_mlt_rec'  => 'SMW\DataValues\MonolingualTextValue',
 			'_qty'  => 'SMWQuantityValue', // Type for numbers with units of measurement
 			// Special types are not avaialble directly for users (and have no local language name):
 			'__typ' => 'SMWTypesValue', // Special type page type
@@ -429,6 +430,7 @@ class DataTypeRegistry {
 			'_dat'  => DataItem::TYPE_TIME, // Time type
 			'_boo'  => DataItem::TYPE_BOOLEAN, // Boolean type
 			'_rec'  => DataItem::TYPE_WIKIPAGE, // Value list type (replacing former nary properties)
+			'_mlt_rec' => DataItem::TYPE_WIKIPAGE, // Monolingual text container
 			'_geo'  => DataItem::TYPE_GEO, // Geographical coordinates
 			'_gpo'  => DataItem::TYPE_BLOB, // Geographical polygon
 			'_qty'  => DataItem::TYPE_NUMBER, // Type for numbers with units of measurement
@@ -452,7 +454,8 @@ class DataTypeRegistry {
 
 		$this->subDataTypes = array(
 			'__sob' => true,
-			'_rec'  => true
+			'_rec'  => true,
+			'_mlt_rec' => true
 		);
 
 		// Deprecated since 1.9

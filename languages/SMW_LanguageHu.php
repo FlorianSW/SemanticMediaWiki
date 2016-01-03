@@ -48,6 +48,7 @@ class SMWLanguageHu extends SMWLanguage {
 		'_tel' => 'Telefonszám', // name of the telephone number URI datatype
 		'_rec' => 'Rekord', // name of the record datatype
 		'_qty' => 'Mennyiség', // name of the quantity datatype
+		'_mlt_rec' => 'Monolingual text',
 	);
 
 	protected $m_DatatypeAliases = array(
@@ -81,7 +82,9 @@ class SMWLanguageHu extends SMWLanguage {
 		'_MEDIA'=> 'Médiatípusa',
 		'_MIME' => 'MIME-Típusa',
 		'_ERRC' => 'Has processing error',
-		'_ERRT' => 'Has processing error text'
+		'_ERRT' => 'Has processing error text',
+		'_LCODE' => 'Language code',
+		'_LTEXT' => 'Language dependent text',
 	);
 
 	protected $m_SpecialPropertyAliases = array(

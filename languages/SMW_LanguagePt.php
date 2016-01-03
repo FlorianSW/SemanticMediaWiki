@@ -39,6 +39,7 @@ class SMWLanguagePt extends SMWLanguage {
 		'_tel' => 'Número de telefone',  // name of the telephone (URI) type
 		'_rec' => 'Registro', // name of record data type
 		'_qty' => 'Quantidade', // name of the number type with units of measurement
+		'_mlt_rec' => 'Monolingual text',
 	);
 
 	protected $m_DatatypeAliases = array(
@@ -84,7 +85,9 @@ class SMWLanguagePt extends SMWLanguage {
 		'_MEDIA'=> 'Media type',
 		'_MIME' => 'Mime type',
 		'_ERRC' => 'Has processing error',
-		'_ERRT' => 'Has processing error text'
+		'_ERRT' => 'Has processing error text',
+		'_LCODE' => 'Language code',
+		'_LTEXT' => 'Language dependent text',
 	);
 
 	protected $m_SpecialPropertyAliases = array(
